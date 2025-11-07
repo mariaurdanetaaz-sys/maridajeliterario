@@ -1,16 +1,92 @@
+/* 🎨 Maridaje Literario - Estilo principal */
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f7fa;
-  color: #333;
   margin: 0;
-  padding: 2rem;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  background: url('images/fondo.jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  color: #5A2A37;
   text-align: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Capa difusa encima de la imagen */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(250, 243, 236, 0.75); /* tono crema con transparencia */
+  backdrop-filter: blur(6px);
+  z-index: -1;
+}
+
+/* Encabezado */
+header {
+  padding-top: 80px;
 }
 
 h1 {
-  color: #0078ff;
+  font-family: 'Dancing Script', cursive;
+  font-size: 4rem;
+  color: #5A2A37;
+  margin-bottom: 0.2rem;
 }
 
-p {
-  font-size: 1.2rem;
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  color: #C47B89;
+  font-weight: 400;
+  letter-spacing: 1px;
 }
+
+/* Texto principal */
+main {
+  margin-top: 60px;
+  padding: 0 20px;
+}
+
+main p {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #5A2A37;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: inline-block;
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+/* Botón */
+.boton {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 12px 30px;
+  background-color: #C47B89;
+  color: #FAF3EC;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+  background-color: #5A2A37;
+}
+
+/* Pie de página */
+footer {
+  margin-top: 100px;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #5A2A37;
+  opacity: 0.8;
+}
+
+
